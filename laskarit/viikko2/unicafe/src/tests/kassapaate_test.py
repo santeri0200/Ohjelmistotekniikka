@@ -85,3 +85,10 @@ class TestKassapaate(unittest.TestCase):
         self.kassapaate.lataa_rahaa_kortille(maksukortti, 500)
         self.assertEqual(maksukortti.saldo_euroina(), 10.00)
         self.assertEqual(self.kassapaate.kassassa_rahaa_euroina(), 1005.00)
+
+    def test_kortti_ottaa_epaonnistoneesti(self):
+        maksukortti = Maksukortti(500)
+
+        self.kassapaate.lataa_rahaa_kortille(maksukortti, -500)
+        self.assertEqual(maksukortti.saldo_euroina(), 5.00)
+        self.assertEqual(self.kassapaate.kassassa_rahaa_euroina(), 1000.00)
