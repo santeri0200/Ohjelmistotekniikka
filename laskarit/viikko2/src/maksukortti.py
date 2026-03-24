@@ -20,10 +20,14 @@ class Maksukortti:
     def syo_maukkaasti(self):
         if 400 <= self.saldo:
             self.saldo -= 400
+            return True
+        return False
 
     def syo_edullisesti(self):
         if 250 <= self.saldo:
             self.saldo -= 250
+            return True
+        return False
 
 
 class Kassapaate:
