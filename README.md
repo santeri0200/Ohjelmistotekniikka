@@ -2,5 +2,5 @@
 
 **_Tästä tulee kai peli._**
 
-[Vaarimusmäärittely dokumentti](./vaatimusmaarittely.md)
-[Työaikakirjanpito](./tyoaikakirjanpito.md)
+[Vaarimusmäärittely dokumentti](./dokumentaatio/vaatimusmaarittely.md)
+[Työaikakirjanpito](./dokumentaatio/tyoaikakirjanpito.md)
